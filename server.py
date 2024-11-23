@@ -82,7 +82,8 @@ def switch_model():
 def generate_wav():
     kwargs = {
         'language_name': 'en',
-        'speed': float(get('speed', 1.0))
+        'speed': float(get('speed', 1.0)),
+        'enable_text_splitting': True
     }
     speakers = get_speakers()
     if speaker and speakers:
